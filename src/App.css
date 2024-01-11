@@ -1,0 +1,51 @@
+/* Styles for the root element */
+#root {
+  max-width: 1280px; /* Set the maximum width of the root element */
+  margin: 0 auto; /* Center the root element horizontally */
+  padding: 2rem; /* Add padding to the root element */
+  text-align: center; /* Center the text inside the root element */
+}
+
+/* Styles for the logo class */
+.logo {
+  height: 6em; /* Set the height of elements with the logo class */
+  padding: 1.5em; /* Add padding to elements with the logo class */
+  will-change: filter; /* Hint to the browser that the 'filter' property will change */
+  transition: filter 300ms; /* Apply a smooth transition to the 'filter' property over 300 milliseconds */
+}
+
+/* Hover effect for the logo class */
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa); /* Apply a drop shadow with a color when the logo is hovered */
+}
+
+/* Hover effect for the logo class with the react class */
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa); /* Apply a different drop shadow with a color when the logo with the react class is hovered */
+}
+
+/* Keyframes animation for spinning the logo */
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg); /* Initial rotation angle for the logo-spin animation */
+  }
+  to {
+    transform: rotate(360deg); /* Final rotation angle for the logo-spin animation, completing a full circle */
+}
+
+/* Media query for handling reduced motion preference */
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear; /* Apply the logo-spin animation to the second link's logo with an infinite loop over 20 seconds linearly */
+  }
+}
+
+/* Styles for the card class */
+.card {
+  padding: 2em; /* Add padding to elements with the card class */
+}
+
+/* Styles for the read-the-docs class */
+.read-the-docs {
+  color: #888; /* Set the color of elements with the read-the-docs class */
+}

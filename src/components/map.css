@@ -1,0 +1,62 @@
+/* Styles for elements with the class 'map-h2' */
+.map-h2 {
+  text-transform: uppercase; /* Convert text to uppercase */
+  font-size: 1rem; /* Set the font size for elements with the 'map-h2' class */
+  padding: 20px; /* Add padding to all sides of elements with the 'map-h2' class */
+  padding-left: 10px; /* Add additional left padding to elements with the 'map-h2' class */
+  text-align: center; /* Center-align text within elements with the 'map-h2' class */
+}
+
+/* Styles for elements with the class 'google-map' */
+.google-map {
+  width: 100%; /* Set the width of elements with the 'google-map' class to 100% */
+  height: 60vh; /* Set the height of elements with the 'google-map' class to 60% of the viewport height */
+}
+
+/* Styles for elements with the class 'pin' */
+.pin {
+  display: block; /* Set the display property to block for elements with the 'pin' class */
+  align-items: center; /* Align items to the center for elements with the 'pin' class */
+  width: 80px; /* Set the width of elements with the 'pin' class */
+  color: white; /* Set the text color to white for elements with the 'pin' class */
+}
+
+/* Styles for elements with the class 'pin-icon' */
+.pin-icon {
+  font-size: 4rem; /* Set the font size for elements with the 'pin-icon' class */
+}
+
+/* Styles for elements with the class 'pin-text' */
+.pin-text {
+  font-size: 1.3em; /* Set the font size for elements with the 'pin-text' class */
+}
+
+/* Media query for screen widths of 799px or more */
+@media screen and (min-width: 799px) {
+  /* Adjust the height of elements with the 'google-map' class for larger screens */
+  .google-map {
+    height: 80vh;
+  }
+
+  /* Adjust font size and font weight for elements with the 'map-h2' class on larger screens */
+  .map-h2 {
+    font-size: 1.3rem;
+    font-weight: 400;
+  }
+
+  /* Adjust the width of elements with the 'pin' class for larger screens */
+  .pin {
+    width: 15vw;
+  }
+
+  /* Adjust the font size of elements with the 'pin-icon' class for larger screens */
+  .pin-icon {
+    font-size: 2vw;
+  }
+}
+
+/* Styles for all 'h2' elements */
+h2 {
+  font-family: sans-serif; /* Set the font family for all 'h2' elements */
+  color: white; /* Set the text color to white for all 'h2' elements */
+}
